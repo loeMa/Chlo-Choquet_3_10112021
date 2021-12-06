@@ -1,0 +1,65 @@
+.map{
+    text-align: center;
+
+    &__heading{
+        padding: 4%;
+        background-color: #eaeaea;
+
+        
+    }
+    &__sum{
+        padding: 10% 0;
+
+        @include bg;
+    }
+
+}
+
+
+
+.restaurants{
+    background-color: $color-back;
+
+
+    &__block{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+        &__card{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            overflow: hidden;
+            border-radius: 20px;
+            margin: 4%;
+
+            @include card-shadow;
+
+            &__img{
+                height: 200px;
+                display: flex;
+                overflow: hidden;
+                
+
+
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    object-position: 25% 62%;
+                }
+            }
+            &__body{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+            }
+        }
+    }
+    a{
+        text-decoration:none;
+        color: black;
+    }  
+}
