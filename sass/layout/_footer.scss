@@ -1,0 +1,30 @@
+footer{
+    background-color: $color-dark;
+    padding: 6%;
+    color: $color-white;
+
+    & h1{
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    & ul{
+        list-style: none;
+        padding:4% 0;
+        position: relative;
+        
+        
+        & li{
+            padding-bottom: 2%;
+        }
+
+        & a{
+            text-decoration: none;
+            color: $color-white;
+
+            & i{
+                padding-right: 3%;
+            }
+        }
+    }
+}

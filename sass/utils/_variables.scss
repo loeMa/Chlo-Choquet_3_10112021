@@ -2,13 +2,20 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-back: #f6f6f6;
+$color-white: #ffff;
+$color-dark: #353535;
+
 
 
 @mixin card-shadow{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 16px 0px;
     
 }
 
 @mixin bg{
-    background-color: #f6f6f6;
+    background-color: $color-back;
+}
+
+@mixin padding-bloc{
+    padding: 10% 4%;
 }

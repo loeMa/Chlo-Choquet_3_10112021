@@ -4,22 +4,62 @@
     &__heading{
         padding: 4%;
         background-color: #eaeaea;
+        box-shadow: inset 0px 17px 3px -16px #c8bebe;
 
-        
+        &__city{
+            border: none;
+            text-align: center;
+            font-size: 16px;
+            background-color: transparent;
+            width: 140px;
+        }
     }
     &__sum{
-        padding: 10% 0;
+        padding: 10% ;
 
         @include bg;
     }
-
+    h2{
+        padding: 3% 7%;
+    }
 }
 
+.instructions{
+    @include padding-bloc;
+
+    &__list{
+
+
+        &__el{
+            border-radius: 20px;
+            margin: 6%;
+            padding: 6% 0 6% 7%;
+            @include card-shadow;
+
+            & i{
+                padding-right: 10%;
+                color: #7e7e7e;
+            
+            }
+            & p{
+                font-weight: 400;
+            }
+            & span{
+                background-color: $color-primary;
+                color: $color-white;
+                border-radius: 100%;
+                padding: 1% 2%;
+                position: absolute;
+                left: 25px;
+            }
+        }
+    }
+}
 
 
 .restaurants{
     background-color: $color-back;
-
+    @include padding-bloc;
 
     &__block{
         display: flex;
@@ -32,29 +72,49 @@
             flex-direction: column;
             overflow: hidden;
             border-radius: 20px;
-            margin: 4%;
+            margin: 4% 0;
+            height: 265px;
 
             @include card-shadow;
 
             &__img{
-                height: 200px;
+                height: 190px;
                 display: flex;
                 overflow: hidden;
                 
 
-
-                img{
+                &__new{
+                    position: absolute;
+                    right: 50px;
+                    background-color: $color-tertiary;
+                    color: #008766;
+                    padding: 2% 4%;
+                    margin-top: 4%;
+                    border-radius: 2px;
+                }
+                &__generalfit{
                     object-fit: cover;
                     width: 100%;
-                    object-position: 25% 62%;
+                    object-position: bottom;
+                    
                 }
+                &__fit{
+                    object-position: 0% 60%;
+                }
+                
             }
             &__body{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                align-items: center;
+                align-items: flex-start;
+                padding: 4%;
 
+                &_icone{
+                    padding: 8px 5% 0 0;
+
+                    
+                }
             }
         }
     }

@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Roboto Mono", monospace;
-  letter-spacing: normal;
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 
@@ -11,12 +10,18 @@ h1 {
 
 h3, p {
   margin: 0;
-  padding: 4px;
+  padding: 1px;
   overflow: auto;
 }
 
 p {
   font-weight: 200;
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 26px;
+  padding: 4% 0 3% 0;
 }
 
 .map {
@@ -25,14 +30,51 @@ p {
 .map__heading {
   padding: 4%;
   background-color: #eaeaea;
+  box-shadow: inset 0px 17px 3px -16px #c8bebe;
+}
+.map__heading__city {
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  background-color: transparent;
+  width: 140px;
 }
 .map__sum {
-  padding: 10% 0;
+  padding: 10%;
   background-color: #f6f6f6;
+}
+.map h2 {
+  padding: 3% 7%;
+}
+
+.instructions {
+  padding: 10% 4%;
+}
+.instructions__list__el {
+  border-radius: 20px;
+  margin: 6%;
+  padding: 6% 0 6% 7%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 16px 0px;
+}
+.instructions__list__el i {
+  padding-right: 10%;
+  color: #7e7e7e;
+}
+.instructions__list__el p {
+  font-weight: 400;
+}
+.instructions__list__el span {
+  background-color: #9356DC;
+  color: #ffff;
+  border-radius: 100%;
+  padding: 1% 2%;
+  position: absolute;
+  left: 25px;
 }
 
 .restaurants {
   background-color: #f6f6f6;
+  padding: 10% 4%;
 }
 .restaurants__block {
   display: flex;
@@ -45,24 +87,41 @@ p {
   flex-direction: column;
   overflow: hidden;
   border-radius: 20px;
-  margin: 4%;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 4% 0;
+  height: 265px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 16px 0px;
 }
 .restaurants__block__card__img {
-  height: 200px;
+  height: 190px;
   display: flex;
   overflow: hidden;
 }
-.restaurants__block__card__img img {
+.restaurants__block__card__img__new {
+  position: absolute;
+  right: 50px;
+  background-color: #99E2D0;
+  color: #008766;
+  padding: 2% 4%;
+  margin-top: 4%;
+  border-radius: 2px;
+}
+.restaurants__block__card__img__generalfit {
   object-fit: cover;
   width: 100%;
-  object-position: 25% 62%;
+  object-position: bottom;
+}
+.restaurants__block__card__img__fit {
+  object-position: 0% 60%;
 }
 .restaurants__block__card__body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  padding: 4%;
+}
+.restaurants__block__card__body_icone {
+  padding: 8px 5% 0 0;
 }
 .restaurants a {
   text-decoration: none;
@@ -74,10 +133,109 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: #cfcfcf 0px 7px 29px 0px;
+}
+.logo__arrow {
+  position: absolute;
+  left: 6%;
+  color: black;
 }
 .logo img {
   width: 45%;
+}
+
+.map__sum--btn {
+  border-radius: 32px;
+  padding: 10%;
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 5%;
+  font-size: 16px;
+  color: white;
+  margin: 5%;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 16px 0px;
+}
+
+.like {
+  font-size: 30px;
+}
+
+footer {
+  background-color: #353535;
+  padding: 6%;
+  color: #ffff;
+}
+footer h1 {
+  font-size: 18px;
+  font-weight: normal;
+}
+footer ul {
+  list-style: none;
+  padding: 4% 0;
+  position: relative;
+}
+footer ul li {
+  padding-bottom: 2%;
+}
+footer ul a {
+  text-decoration: none;
+  color: #ffff;
+}
+footer ul a i {
+  padding-right: 3%;
+}
+
+.illustration {
+  height: 270px;
+  overflow: hidden;
+}
+.illustration img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  border-radius: 50px 50px 0 0;
+  overflow: hidden;
+  margin-top: -12%;
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 10% 4%;
+}
+.menu__heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu__list__title {
+  text-transform: uppercase;
+}
+.menu__list__title h2 {
+  font-weight: 200;
+  font-size: 18px;
+}
+.menu__list__el {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 3%;
+  margin: 0 0 6%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 16px 0px;
+}
+.menu__list__el--price {
+  align-self: flex-end;
+  padding: 3%;
+}
+.menu__list__el h3 {
+  font-weight: 500;
+}
+.menu__list__el p {
+  font-size: 15px;
+}
+.menu__order {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

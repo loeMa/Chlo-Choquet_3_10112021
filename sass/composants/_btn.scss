@@ -1,0 +1,17 @@
+.map__sum--btn{
+    border-radius: 32px;
+    padding: 10%;
+    background: linear-gradient($color-secondary, $color-primary);
+    padding: 5%;
+    font-size: 16px;
+    color: white;
+    margin: 5%;
+    border: none;
+
+
+    @include card-shadow;
+}
+
+.like{
+    font-size: 30px;
+}
