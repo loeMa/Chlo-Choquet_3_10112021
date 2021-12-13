@@ -12,5 +12,9 @@
 
     img{
         width: 45%;
+
+        @include tablette-only{
+            width: 20%;
+        }
     }
 }

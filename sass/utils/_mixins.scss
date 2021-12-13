@@ -1,0 +1,22 @@
+@mixin card-shadow{
+    box-shadow: rgba(100, 100, 111, 0.26) 0px 7px 16px 0px;
+    
+}
+
+@mixin bg{
+    background-color: $color-back;
+}
+
+@mixin padding-bloc{
+    padding: 10% 4%;
+}
+
+@mixin ligth-btn($color){
+    background-color: lighten($color, 10%);
+}
+
+@mixin tablette-only{
+    @media screen and(min-width: map-get($breakpoint, tablette)){
+        @content;
+    }
+}

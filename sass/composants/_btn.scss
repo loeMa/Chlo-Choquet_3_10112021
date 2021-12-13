@@ -1,17 +1,36 @@
 .map__sum--btn{
     border-radius: 32px;
-    padding: 10%;
-    background: linear-gradient($color-secondary, $color-primary);
-    padding: 5%;
-    font-size: 16px;
-    color: white;
+    background: $color-gradient;
+    padding: 4% 7%;
+    font-size: 18px;
+    color: $color-white;
     margin: 5%;
     border: none;
+    text-decoration: none;
 
 
     @include card-shadow;
+    @include tablette-only{
+        padding: 3% 5%;
+    }
+
+    &:hover{
+        opacity: 85%;
+        box-shadow:3px 6px 20px darken($color: $color-dark, $amount: 3% );
+    }
 }
 
 .like{
     font-size: 30px;
+    font-weight: 100;
+    transition: all ease-out 0.5s;
+    
+    &:hover{
+        font-weight: 600;
+        background: $color-gradient;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+
+    }
 }
