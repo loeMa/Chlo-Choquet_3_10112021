@@ -150,6 +150,11 @@ h2 {
     width: 40%;
   }
 }
+@media screen and (min-width: 960px) {
+  .restaurants__block__card {
+    width: 24%;
+  }
+}
 .restaurants__block__card__img {
   height: 190px;
   display: flex;

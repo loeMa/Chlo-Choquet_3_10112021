@@ -126,6 +126,9 @@
             @include tablette-only{
                 width: 40%;
             }
+            @include desktop{
+                width: 24%;
+            }
 
             &__img{
                 height: 190px;
