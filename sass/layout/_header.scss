@@ -16,5 +16,8 @@
         @include tablette-only{
             width: 20%;
         }
+        @include desktop{
+            width: 10%;
+        }
     }
 }
