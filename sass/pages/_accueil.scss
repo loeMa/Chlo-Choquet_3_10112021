@@ -6,8 +6,10 @@
         background-color: #eaeaea;
         box-shadow: inset 0px 17px 3px -16px #c8bebe;
 
+        
+
         &__city{
-            border: none;
+            border: $no-border;
             text-align: center;
             font-size: 16px;
             background-color: transparent;
@@ -26,24 +28,35 @@
     h2{
         padding: 3% 10%;
     }
+    @include desktop{
+        &__heading{
+            padding: 1%;
+        }
+        &__sum{
+            padding: 0 1%;
+        }
+    }
+    
 }
 
 .instructions{
     @include padding-bloc;
-
+    @include tablette-only{
+        padding: 4%;
+    }
     &__list{
-
-
+        
         &__el{
-            border-radius: 20px;
+            border-radius: $border-radius;
             margin: 6%;
             padding: 6% 0 6% 7%;
+            display: flex;
+            align-items: center;
+            column-gap: 10%;
             @include card-shadow;
 
             & i{
-                padding-right: 10%;
                 color: #7e7e7e;
-            
             }
             & p{
                 font-weight: 400;
@@ -56,15 +69,43 @@
                 position: absolute;
                 left: 6%;
             }
+            &:hover{
+                background-color: lighten($color: $color-primary, $amount: 35%);
+
+                i{
+                    color: $color-primary;
+                }
+            }
+        }
+        @include desktop{
+            display: flex;
+            &__el{
+                width: 30%;
+                padding: 1%;
+                margin: 2%;
+            }
+            & i{
+                font-size: 20px;
+            }
+            & span{
+                position: relative;
+                    left: -10%;
+                    padding: 2% 4%;
+            }
+
         }
     }
 }
+
 
 
 .restaurants{
     background-color: $color-back;
     @include padding-bloc;
 
+    @include tablette-only{
+        padding: 4%;
+    }
 
     &__block{
         display: flex;
@@ -77,7 +118,7 @@
             flex-wrap: nowrap;
             flex-direction: column;
             overflow: hidden;
-            border-radius: 20px;
+            border-radius: $border-radius;
             margin: 4% 0;
             height: 270px;
 
@@ -120,7 +161,9 @@
                     object-fit: cover;
                     width: $size;
                     object-position: bottom;
-                    
+                    @include desktop{
+                        object-position: center;
+                    }
                 }
                 &__fit{
                     object-position: 0% 60%;
@@ -146,4 +189,5 @@
         text-decoration:none;
         color: black;
     }  
+    
 }

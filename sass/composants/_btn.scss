@@ -1,17 +1,17 @@
-.map__sum--btn{
+.btn{
     border-radius: 32px;
     background: $color-gradient;
     padding: 4% 7%;
     font-size: 18px;
     color: $color-white;
     margin: 5%;
-    border: none;
+    border: $no-border;
     text-decoration: none;
 
 
     @include card-shadow;
     @include tablette-only{
-        padding: 3% 5%;
+        padding: 1% 2%;
     }
 
     &:hover{
@@ -20,17 +20,4 @@
     }
 }
 
-.like{
-    font-size: 30px;
-    font-weight: 100;
-    transition: all ease-out 0.5s;
-    
-    &:hover{
-        font-weight: 600;
-        background: $color-gradient;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        
 
-    }
-}

@@ -6,9 +6,13 @@ $color-white: #ffff;
 $color-dark: #353535;
 $color-gradient:linear-gradient($color-secondary, $color-primary);
 $size: 100%;
+$border-radius: 20px;
+$no-border: none;
 $breakpoint: (
     tablette: 768px,
     desktop: 960px,
 );
-
+$duration: 1000ms;
+$bar-delay: 150ms;
+$container-delay: $duration + $bar-delay*2;
 

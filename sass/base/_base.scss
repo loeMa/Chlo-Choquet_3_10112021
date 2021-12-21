@@ -7,6 +7,7 @@
 
 h1{
     font-family: 'Shrikhand', cursive;
+    padding: 0% 0 4% 0;
 }
 h3, p{
     margin: 0;
@@ -21,4 +22,7 @@ h2{
     font-size: 26px;
     padding: 4% 0 3% 0;
 
+    @include desktop{
+        padding: 0;
+    }
 }
