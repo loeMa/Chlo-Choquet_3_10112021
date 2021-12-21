@@ -13,6 +13,9 @@ footer{
         padding:4% 0;
         position: relative;
         
+        @include desktop{
+            padding: 2% 0;
+        }
         
         & li{
             padding-bottom: 2%;

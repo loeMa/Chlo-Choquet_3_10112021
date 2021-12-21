@@ -31,6 +31,9 @@
         justify-content: space-between;
         padding-left: 2%;
         
+        & h1{
+            padding: 0% 0 4% 0;
+        }
     }
     
 
@@ -142,7 +145,7 @@
         transform: translateY(0px);
     }
 }
-@for $i from 1 to 10 {
+@for $i from 1 to 11 {
     #el-#{$i} {
       animation-delay:  #{$i/10}s;
     }

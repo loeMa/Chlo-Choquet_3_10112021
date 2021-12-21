@@ -6,7 +6,6 @@
 
 h1 {
   font-family: "Shrikhand", cursive;
-  padding: 0% 0 4% 0;
 }
 
 h3, p {
@@ -337,6 +336,11 @@ footer ul {
   padding: 4% 0;
   position: relative;
 }
+@media screen and (min-width: 960px) {
+  footer ul {
+    padding: 2% 0;
+  }
+}
 footer ul li {
   padding-bottom: 2%;
 }
@@ -379,6 +383,9 @@ footer ul a i {
   flex-direction: row;
   justify-content: space-between;
   padding-left: 2%;
+}
+.menu__heading h1 {
+  padding: 0% 0 4% 0;
 }
 .menu__list__title {
   text-transform: uppercase;
@@ -505,6 +512,10 @@ footer ul a i {
 
 #el-9 {
   animation-delay: 0.9s;
+}
+
+#el-10 {
+  animation-delay: 1s;
 }
 
 .check {
