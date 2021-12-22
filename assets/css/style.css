@@ -143,6 +143,7 @@ h2 {
   border-radius: 20px;
   margin: 4% 0;
   height: 270px;
+  width: 100%;
   box-shadow: rgba(100, 100, 111, 0.26) 0px 7px 16px 0px;
 }
 @media screen and (min-width: 768px) {
@@ -258,18 +259,6 @@ h2 {
   box-shadow: 3px 6px 20px #2d2d2d;
 }
 
-.like {
-  font-size: 30px;
-  font-weight: 100;
-  transition: all ease-out 0.5s;
-}
-.like:hover {
-  font-weight: 600;
-  background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
-  color: transparent;
-}
-
 .loader {
   display: flex;
   justify-content: center;
@@ -327,6 +316,18 @@ h2 {
     opacity: 1;
   }
 }
+.like {
+  font-size: 30px;
+  font-weight: 100;
+  transition: all ease-out 0.5s;
+}
+.like:hover {
+  background: linear-gradient(#FF79DA, #9356DC);
+  font-weight: 600;
+  background-clip: text;
+  color: transparent;
+}
+
 footer {
   background-color: #353535;
   padding: 6%;
@@ -484,43 +485,43 @@ footer ul a i {
   }
 }
 #el-1 {
-  animation-delay: 0.1s;
+  animation-delay: 0.0909090909s;
 }
 
 #el-2 {
-  animation-delay: 0.2s;
+  animation-delay: 0.1818181818s;
 }
 
 #el-3 {
-  animation-delay: 0.3s;
+  animation-delay: 0.2727272727s;
 }
 
 #el-4 {
-  animation-delay: 0.4s;
+  animation-delay: 0.3636363636s;
 }
 
 #el-5 {
-  animation-delay: 0.5s;
+  animation-delay: 0.4545454545s;
 }
 
 #el-6 {
-  animation-delay: 0.6s;
+  animation-delay: 0.5454545455s;
 }
 
 #el-7 {
-  animation-delay: 0.7s;
+  animation-delay: 0.6363636364s;
 }
 
 #el-8 {
-  animation-delay: 0.8s;
+  animation-delay: 0.7272727273s;
 }
 
 #el-9 {
-  animation-delay: 0.9s;
+  animation-delay: 0.8181818182s;
 }
 
 #el-10 {
-  animation-delay: 1s;
+  animation-delay: 0.9090909091s;
 }
 
 .check {

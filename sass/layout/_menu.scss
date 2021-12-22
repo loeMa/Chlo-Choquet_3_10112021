@@ -147,7 +147,7 @@
 }
 @for $i from 1 to 11 {
     #el-#{$i} {
-      animation-delay:  #{$i/10}s;
+      animation-delay:  #{$i/11}s;
     }
 }
 
