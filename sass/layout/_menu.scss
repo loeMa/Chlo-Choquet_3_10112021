@@ -76,7 +76,7 @@
                 & >.check{
                     width: 17%;
                     &>.check--anim{
-                        transform: rotate(0turn) ;
+                        transform: rotate(1turn) ;
                     }
                 }
             }
@@ -167,7 +167,6 @@
         border-radius: $border-radius;
         padding: 6%;
         font-size: 14px;
-        transform: rotate(1turn);
         transition: transform 600ms ease-in-out;
     }
 }

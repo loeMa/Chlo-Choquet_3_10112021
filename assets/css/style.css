@@ -428,7 +428,7 @@ footer ul a i {
   width: 17%;
 }
 .menu__list__el:hover > .check > .check--anim {
-  transform: rotate(0turn);
+  transform: rotate(1turn);
 }
 .menu__list__el--price {
   align-self: flex-end;
@@ -540,7 +540,6 @@ footer ul a i {
   border-radius: 20px;
   padding: 6%;
   font-size: 14px;
-  transform: rotate(1turn);
   transition: transform 600ms ease-in-out;
 }
 
